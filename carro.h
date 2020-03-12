@@ -11,10 +11,13 @@ class carro{
       int ano;
 
     public:
+      carro();
+      carro(string marca, int ano);
       void setMarca(string x);
       string getMarca();
       void setAno(int y);
       int getAno();
+      ~carro();
 };
 
 #endif

@@ -1,4 +1,5 @@
 #include <string>
+#include <iostream>
 #include "carro.h"
 
 using namespace std;
@@ -21,4 +22,17 @@ void  carro::setAno(int y){
 
 int carro::getAno(){
   return ano;
+}
+
+carro::carro(){
+  marca = "fiat";
+}
+
+carro::carro(string x, int y){
+  marca = x;
+  ano = y;
+}
+
+carro::~carro(){
+  cout << "Carro foi destruido" << endl;
 }
